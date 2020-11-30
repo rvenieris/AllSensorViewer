@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB55952525740459008E23E9 /* AllSensorViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55952425740459008E23E9 /* AllSensorViewerApp.swift */; };
+		BB55952725740459008E23E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55952625740459008E23E9 /* ContentView.swift */; };
+		BB5595292574045B008E23E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB5595282574045B008E23E9 /* Assets.xcassets */; };
+		BB55952C2574045B008E23E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB55952B2574045B008E23E9 /* Preview Assets.xcassets */; };
+		BB5595372574045B008E23E9 /* AllSensorViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5595362574045B008E23E9 /* AllSensorViewerTests.swift */; };
+		BB5595422574045B008E23E9 /* AllSensorViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5595412574045B008E23E9 /* AllSensorViewerUITests.swift */; };
+		BB55955325740526008E23E9 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55955225740526008E23E9 /* LocationManager.swift */; };
+		BB559559257405B0008E23E9 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB559558257405B0008E23E9 /* LocationView.swift */; };
+		BB772B2025741642009DAA15 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB772B1F25741642009DAA15 /* Extensions.swift */; };
+		BB772B2525741C65009DAA15 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB772B2425741C65009DAA15 /* Row.swift */; };
+		BB772B2A257436D1009DAA15 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB772B29257436D1009DAA15 /* MotionManager.swift */; };
+		BB772B2F25743988009DAA15 /* MotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB772B2E25743988009DAA15 /* MotionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB5595332574045B008E23E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB55951925740459008E23E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB55952025740459008E23E9;
+			remoteInfo = AllSensorViewer;
+		};
+		BB55953E2574045B008E23E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB55951925740459008E23E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB55952025740459008E23E9;
+			remoteInfo = AllSensorViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB55952125740459008E23E9 /* AllSensorViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllSensorViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB55952425740459008E23E9 /* AllSensorViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSensorViewerApp.swift; sourceTree = "<group>"; };
+		BB55952625740459008E23E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB5595282574045B008E23E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB55952B2574045B008E23E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB55952D2574045B008E23E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5595322574045B008E23E9 /* AllSensorViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllSensorViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5595362574045B008E23E9 /* AllSensorViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSensorViewerTests.swift; sourceTree = "<group>"; };
+		BB5595382574045B008E23E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB55953D2574045B008E23E9 /* AllSensorViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllSensorViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5595412574045B008E23E9 /* AllSensorViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSensorViewerUITests.swift; sourceTree = "<group>"; };
+		BB5595432574045B008E23E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB55955225740526008E23E9 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		BB559558257405B0008E23E9 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		BB772B1F25741642009DAA15 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BB772B2425741C65009DAA15 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		BB772B29257436D1009DAA15 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		BB772B2E25743988009DAA15 /* MotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB55951E25740459008E23E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB55952F2574045B008E23E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB55953A2574045B008E23E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB55951825740459008E23E9 = {
+			isa = PBXGroup;
+			children = (
+				BB55952325740459008E23E9 /* AllSensorViewer */,
+				BB5595352574045B008E23E9 /* AllSensorViewerTests */,
+				BB5595402574045B008E23E9 /* AllSensorViewerUITests */,
+				BB55952225740459008E23E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB55952225740459008E23E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB55952125740459008E23E9 /* AllSensorViewer.app */,
+				BB5595322574045B008E23E9 /* AllSensorViewerTests.xctest */,
+				BB55953D2574045B008E23E9 /* AllSensorViewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB55952325740459008E23E9 /* AllSensorViewer */ = {
+			isa = PBXGroup;
+			children = (
+				BB55955725740594008E23E9 /* View */,
+				BB55956025740617008E23E9 /* Services */,
+				BB55952425740459008E23E9 /* AllSensorViewerApp.swift */,
+				BB5595282574045B008E23E9 /* Assets.xcassets */,
+				BB55952D2574045B008E23E9 /* Info.plist */,
+				BB55952A2574045B008E23E9 /* Preview Content */,
+			);
+			path = AllSensorViewer;
+			sourceTree = "<group>";
+		};
+		BB55952A2574045B008E23E9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BB55952B2574045B008E23E9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB5595352574045B008E23E9 /* AllSensorViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB5595362574045B008E23E9 /* AllSensorViewerTests.swift */,
+				BB5595382574045B008E23E9 /* Info.plist */,
+			);
+			path = AllSensorViewerTests;
+			sourceTree = "<group>";
+		};
+		BB5595402574045B008E23E9 /* AllSensorViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB5595412574045B008E23E9 /* AllSensorViewerUITests.swift */,
+				BB5595432574045B008E23E9 /* Info.plist */,
+			);
+			path = AllSensorViewerUITests;
+			sourceTree = "<group>";
+		};
+		BB55955725740594008E23E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB55952625740459008E23E9 /* ContentView.swift */,
+				BB559558257405B0008E23E9 /* LocationView.swift */,
+				BB772B2E25743988009DAA15 /* MotionView.swift */,
+				BB772B2425741C65009DAA15 /* Row.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB55956025740617008E23E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BB55955225740526008E23E9 /* LocationManager.swift */,
+				BB772B29257436D1009DAA15 /* MotionManager.swift */,
+				BB772B1F25741642009DAA15 /* Extensions.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB55952025740459008E23E9 /* AllSensorViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5595462574045B008E23E9 /* Build configuration list for PBXNativeTarget "AllSensorViewer" */;
+			buildPhases = (
+				BB55951D25740459008E23E9 /* Sources */,
+				BB55951E25740459008E23E9 /* Frameworks */,
+				BB55951F25740459008E23E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AllSensorViewer;
+			productName = AllSensorViewer;
+			productReference = BB55952125740459008E23E9 /* AllSensorViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB5595312574045B008E23E9 /* AllSensorViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5595492574045B008E23E9 /* Build configuration list for PBXNativeTarget "AllSensorViewerTests" */;
+			buildPhases = (
+				BB55952E2574045B008E23E9 /* Sources */,
+				BB55952F2574045B008E23E9 /* Frameworks */,
+				BB5595302574045B008E23E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB5595342574045B008E23E9 /* PBXTargetDependency */,
+			);
+			name = AllSensorViewerTests;
+			productName = AllSensorViewerTests;
+			productReference = BB5595322574045B008E23E9 /* AllSensorViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB55953C2574045B008E23E9 /* AllSensorViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB55954C2574045B008E23E9 /* Build configuration list for PBXNativeTarget "AllSensorViewerUITests" */;
+			buildPhases = (
+				BB5595392574045B008E23E9 /* Sources */,
+				BB55953A2574045B008E23E9 /* Frameworks */,
+				BB55953B2574045B008E23E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB55953F2574045B008E23E9 /* PBXTargetDependency */,
+			);
+			name = AllSensorViewerUITests;
+			productName = AllSensorViewerUITests;
+			productReference = BB55953D2574045B008E23E9 /* AllSensorViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB55951925740459008E23E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					BB55952025740459008E23E9 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					BB5595312574045B008E23E9 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = BB55952025740459008E23E9;
+					};
+					BB55953C2574045B008E23E9 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = BB55952025740459008E23E9;
+					};
+				};
+			};
+			buildConfigurationList = BB55951C25740459008E23E9 /* Build configuration list for PBXProject "AllSensorViewer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB55951825740459008E23E9;
+			productRefGroup = BB55952225740459008E23E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB55952025740459008E23E9 /* AllSensorViewer */,
+				BB5595312574045B008E23E9 /* AllSensorViewerTests */,
+				BB55953C2574045B008E23E9 /* AllSensorViewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB55951F25740459008E23E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB55952C2574045B008E23E9 /* Preview Assets.xcassets in Resources */,
+				BB5595292574045B008E23E9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5595302574045B008E23E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB55953B2574045B008E23E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB55951D25740459008E23E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB772B2025741642009DAA15 /* Extensions.swift in Sources */,
+				BB772B2A257436D1009DAA15 /* MotionManager.swift in Sources */,
+				BB55952725740459008E23E9 /* ContentView.swift in Sources */,
+				BB559559257405B0008E23E9 /* LocationView.swift in Sources */,
+				BB772B2F25743988009DAA15 /* MotionView.swift in Sources */,
+				BB55952525740459008E23E9 /* AllSensorViewerApp.swift in Sources */,
+				BB772B2525741C65009DAA15 /* Row.swift in Sources */,
+				BB55955325740526008E23E9 /* LocationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB55952E2574045B008E23E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5595372574045B008E23E9 /* AllSensorViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5595392574045B008E23E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5595422574045B008E23E9 /* AllSensorViewerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB5595342574045B008E23E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB55952025740459008E23E9 /* AllSensorViewer */;
+			targetProxy = BB5595332574045B008E23E9 /* PBXContainerItemProxy */;
+		};
+		BB55953F2574045B008E23E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB55952025740459008E23E9 /* AllSensorViewer */;
+			targetProxy = BB55953E2574045B008E23E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BB5595442574045B008E23E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB5595452574045B008E23E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB5595472574045B008E23E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AllSensorViewer/Preview Content\"";
+				DEVELOPMENT_TEAM = JT55BTWL93;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AllSensorViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "puc-rio.AllSensorViewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB5595482574045B008E23E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AllSensorViewer/Preview Content\"";
+				DEVELOPMENT_TEAM = JT55BTWL93;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AllSensorViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "puc-rio.AllSensorViewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB55954A2574045B008E23E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JT55BTWL93;
+				INFOPLIST_FILE = AllSensorViewerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "puc-rio.AllSensorViewerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AllSensorViewer.app/AllSensorViewer";
+			};
+			name = Debug;
+		};
+		BB55954B2574045B008E23E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JT55BTWL93;
+				INFOPLIST_FILE = AllSensorViewerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "puc-rio.AllSensorViewerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AllSensorViewer.app/AllSensorViewer";
+			};
+			name = Release;
+		};
+		BB55954D2574045B008E23E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JT55BTWL93;
+				INFOPLIST_FILE = AllSensorViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "puc-rio.AllSensorViewerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AllSensorViewer;
+			};
+			name = Debug;
+		};
+		BB55954E2574045B008E23E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JT55BTWL93;
+				INFOPLIST_FILE = AllSensorViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "puc-rio.AllSensorViewerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AllSensorViewer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB55951C25740459008E23E9 /* Build configuration list for PBXProject "AllSensorViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5595442574045B008E23E9 /* Debug */,
+				BB5595452574045B008E23E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5595462574045B008E23E9 /* Build configuration list for PBXNativeTarget "AllSensorViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5595472574045B008E23E9 /* Debug */,
+				BB5595482574045B008E23E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5595492574045B008E23E9 /* Build configuration list for PBXNativeTarget "AllSensorViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB55954A2574045B008E23E9 /* Debug */,
+				BB55954B2574045B008E23E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB55954C2574045B008E23E9 /* Build configuration list for PBXNativeTarget "AllSensorViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB55954D2574045B008E23E9 /* Debug */,
+				BB55954E2574045B008E23E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB55951925740459008E23E9 /* Project object */;
+}
